@@ -1,0 +1,37 @@
+[general]
+name=VertexWarp
+description=Interactive georeferencing refinement using manual vertex adjustment
+version=1.0.0
+qgisMinimumVersion=3.0
+qgisMaximumVersion=3.99
+author=Kaustubh Bhalerao, AgSci LLC
+email=kaustubh@agsci.com
+about=VertexWarp provides an interactive workflow for refining georeferenced imagery:
+    - Side-by-side synchronized views (reference basemap vs target image)
+    - Manual vertex adjustment with topology-preserving drag
+    - Iterative refinement using Polynomial or TPS warping
+    - Target accuracy: sub-meter (0.5m or better)
+
+    Workflow:
+    1. Load target image and known-good field boundary
+    2. Drag boundary vertices to match actual positions on target
+    3. Click Refine to warp target back to original boundary
+    4. Repeat until satisfied, then export
+tracker=https://github.com/kbhalerao/vertex-warp/issues
+repository=https://github.com/kbhalerao/vertex-warp
+homepage=https://github.com/kbhalerao/vertex-warp
+hasProcessingProvider=no
+changelog=
+    1.0.0 - Initial release
+        * Side-by-side synchronized map views
+        * Topology-preserving vertex drag with Gaussian falloff
+        * Polynomial 1/2/3 and TPS warp options
+        * Sequential vertex navigation
+        * Preview workflow with alignment check
+        * Export to QGIS with one click
+tags=georeferencing,agriculture,imagery,GCP,refinement,warping,alignment
+category=Raster
+icon=resources/icon.png
+experimental=False
+deprecated=False
+license=GPLv2
